@@ -46,7 +46,7 @@
     var minTilArrival = parseInt(tFrequency) - parseInt(tRemainder);
     var nextTrain = moment().add(minTilArrival, "m").format("mm");
 
-    var minArrivalPretty = moment(minTilArrival).format("HH:mm");
+    var minArrivalPretty = moment(minTilArrival).format("hh:mm A");
 
     $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + tDestination + "</td><td>" +
     tFrequency + "</td><td>" +  + "</td><td>" + minArrivalPretty + "</td><td>" + nextTrain + "</td></tr>");
